@@ -19,4 +19,33 @@ canvas{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: centerl;
+
+}
+
+.tool-box{
+    width: 110px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button_tool{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_tool > span{
+    
 }
