@@ -65,3 +65,18 @@ canvas{
 
 }
 
+.input_color::-webkit-color-swatch{
+    border-radius: 100%;
+}
+
+.button_size{
+    padding: 10px;
+}
+
+.button_size > span{
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+    height: 10px;
+    display: block;
+}
