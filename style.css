@@ -71,6 +71,7 @@ canvas{
 
 .button_size{
     padding: 10px;
+    height: auto;
 }
 
 .button_size > span{
@@ -80,3 +81,23 @@ canvas{
     height: 10px;
     display: block;
 }
+
+.button_size[data-size="5"]> span{
+ height: 5px;
+
+}
+
+button_size[data-size="10"]> span{
+    height: 10px;
+   
+   }
+
+   button_size[data-size="20"]> span{
+    height: 20px;
+   
+   }
+
+   button_size[data-size="30"]> span{
+    height: 30px;
+   
+   }
