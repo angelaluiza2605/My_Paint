@@ -9,16 +9,24 @@ const ButtonClear = document.querySelector(".button_clear");
 let brushSize = 50;
 ctx.fillStyle = "#000";
 
-canvas.addEventListener("mousedown", (event) => {
-  const { clientX, clientY } = event;
+canvas.addEventListener("mousedown", ({ clientX, clientY }) => {
+ 
   draw(clientX, clientY);
-});
+})
+
+canvas.addEventListener("mousemove", ({ clientX, clientY }) => {
+ 
+  draw(clientX, clientY);
+})
 const draw = (x, y) => {
-  ctx.
-    ctx.fillRect(
+  ctx.beginPath()
+    ctx.arc(
     x - canvas.offsetLeft,
     y - canvas.offsetTop,
-    brushSize,
-    brushSize
-  );
+    brushSize / 2,
+    0,
+    2=Math.PI
+
+  )
+  ctx.fill()
 };
