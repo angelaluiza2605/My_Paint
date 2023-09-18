@@ -14,7 +14,8 @@ canvas.addEventListener("mousedown", (event) => {
   draw(clientX, clientY);
 });
 const draw = (x, y) => {
-  ctx.fillRect(
+  ctx.
+    ctx.fillRect(
     x - canvas.offsetLeft,
     y - canvas.offsetTop,
     brushSize,
